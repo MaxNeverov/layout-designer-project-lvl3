@@ -1,0 +1,18 @@
+body {
+  background: linear-gradient(to bottom, white, black);
+  user-select: none;
+}
+
+.container {
+  background-color: red;
+}
+a {
+  display: flex;
+  justify-content: center;
+  font-size: 54px;
+}
+
+div {
+  background-color: green;
+}
+/*# sourceMappingURL=style.min.css.map */
