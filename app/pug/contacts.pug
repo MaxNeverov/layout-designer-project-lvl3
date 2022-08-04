@@ -1,0 +1,50 @@
+-
+  var contacts = {
+    "A": [{
+      name: "Алексей Примадонин",
+      status: "Онлайн",
+      avatar: "/images/avatar_3.jpg"
+    }],
+
+    "В": [{
+      name: "Вениамин Редакторович",
+      status: "Онлайн",
+      avatar: "/images/avatar_4.jpg"
+    }],
+
+    "Д": [{
+      name: "Джедай Падаванов",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_2.jpg"
+    }],
+
+    "К": [{
+      name: "Кодовёнок Хекслетович",
+      status: "Был онлайн 3 часа назад",
+      avatar: "/images/avatar_1.jpg"
+    },
+    {
+      name: "Королева Верстальщина",
+      status: "Была онлайн вчера",
+      avatar: "/images/avatar_5.jpg"
+    }],
+
+    "П": [{
+      name: "Питонист Джангович",
+      status: "Был онлайн вчера",
+      avatar: "/images/avatar_6.jpg"
+    }],
+  }
+
+mixin createUserCard(contactsData = [])
+  each contact, positions in contactsData
+    p(class="text-mute letter")= positions
+    each data in contact
+      .contact
+        a(href="", class="flex contact-card")
+            img(src=data.avatar, alt="", class="avatar")
+            .contact-data
+                p(class="text-bold mb-0")= data.name
+                p(class="text-mute small-text mb-0")= data.status
+
++createUserCard(contacts)

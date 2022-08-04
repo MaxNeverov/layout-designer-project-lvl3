@@ -1,8 +1,22 @@
-//- includes/header.pug
-header
-  a.logo(href='#') Хекслет
-  nav
-    a(href='/programs') Программы
-    a(href='/courses') Курсы
-    a(href='/pricing') Цены
-    a(href='/teams') Компаниям
+header(class="header flex")
+  .h-cont(class="flex")
+    a(href="#") 
+      <svg class="img-logo">
+        <use xlink:href="images/sprite.svg#logo">
+      </svg>
+    .h-cont-right(class="flex")
+      a(href="#", class="h-cont-right-a") 
+        <svg class="img-chat">
+          <use xlink:href="images/sprite.svg#people">
+        </svg>
+        span(class="h-menu") Контакты
+      a(href="#", class="h-cont-right-a") 
+        <svg class="img-chat">
+          <use xlink:href="images/sprite.svg#chat">
+        </svg>
+        span(class="h-menu") Сообщения
+      a(href="#", class="h-cont-right-a") 
+        <svg class="img-chat">
+          <use xlink:href="images/sprite.svg#person">
+        </svg>
+        span(class="h-menu") Профиль

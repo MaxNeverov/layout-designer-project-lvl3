@@ -1,0 +1,42 @@
+
+.header{
+    min-height: 72px;
+    background-color: $primary;
+    padding-left: 21px;
+    padding-right: 27px;
+    border-top-left-radius: 1rem;    
+}
+
+.h-cont{
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-cont-right{
+    &-a:not(:last-child) {
+        margin-right: 25px;
+    }    
+}
+
+.img-logo{
+    fill: #fff;
+    width: 15px;   
+    max-height: 26px;
+}
+
+.img-chat{
+    fill: #fff;
+    width: 25px;   
+    max-height: 26px;
+    margin-right: 8px;
+}
+
+.h-menu{
+    color: #fff;
+    font-size: 14px;
+}
+
+
+
+

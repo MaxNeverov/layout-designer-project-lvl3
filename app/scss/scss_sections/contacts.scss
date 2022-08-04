@@ -1,0 +1,60 @@
+@mixin hide-scrollbar() {
+    & {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+.hide-scrollbar{
+    @include hide-scrollbar;
+}
+
+.contacts-cont{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 48px;
+}
+
+.search{
+    padding: 14px 24px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray;
+}
+
+.contacts-cont h2{
+    margin-bottom: 25px;
+}
+
+.contact{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.letter{
+    margin-bottom: 19px;
+    
+}
+
+.contact-card{
+    padding: 1.5rem;
+    box-shadow: 0px 4px 3px $gray;
+
+    &:hover {
+        background-color: $primary;  
+    }
+
+    &:hover p{
+        color: $light;
+          
+    }
+}
+
+
