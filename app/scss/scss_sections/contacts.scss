@@ -16,6 +16,10 @@
     @include hide-scrollbar;
 }
 
+.overflow-scroll{   
+    overflow: scroll;
+}
+
 .contacts-cont{
     padding-left: 24px;
     padding-right: 24px;
@@ -34,11 +38,11 @@
 }
 
 .contact{
-    margin-top: 3rem;
     margin-bottom: 1rem;
 }
 
 .letter{
+    margin-top: 3rem;
     margin-bottom: 19px;
     
 }

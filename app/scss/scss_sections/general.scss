@@ -7,12 +7,32 @@ a {
   text-decoration: none;
 }
 
+p{
+  margin-bottom: 0;
+}
+
 .max-vh{
   height: 100vh;
 }
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.w-100{
+  width: 100%;
 }
 
 .p-tlr{
@@ -26,6 +46,7 @@ a {
 .p-0{
   padding: 0;
 }
+
 .mb-0{
   margin-bottom: 0px;
 }
@@ -42,15 +63,10 @@ a {
 }
 
 .main-cont{
-  height: 100%;
   background-color: $light;
   border-radius: 1rem;
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.main-row{
-  height: 100%;
 }
 
 .left-aside{
@@ -62,7 +78,7 @@ a {
 .avatar{
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 50%;
   margin-right: 24px;
 }
 
@@ -71,16 +87,29 @@ a {
   color: $secondary;
 }
 
-
 @media (min-width: 1600px) {
   .container {
     max-width: 1540px;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 1000px) {
+  .p-tlr{
+    padding: 0rem;
+  }
+
+  .main-cont{
+    border-radius: 0;
+  }
+  
   .left-aside {
     flex-direction: column-reverse;
     justify-content: space-between;
+    max-width: none;
+    border-right: none;
+  }
+
+  .none{
+    display: none;
   }
 }

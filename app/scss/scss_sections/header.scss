@@ -38,5 +38,20 @@
 }
 
 
+@media (max-width: 1000px){
+    .header{
+        border-top-left-radius: 0; 
+        padding-right: 40px; 
+    }
 
+    .img-chat{
+        margin-right: 0px;
+    }
+    
+    .h-cont-right{
+        &-a:not(:last-child) {
+            margin-right: 40px;
+        }    
+    }
+}
 

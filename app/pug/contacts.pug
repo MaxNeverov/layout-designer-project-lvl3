@@ -44,7 +44,7 @@ mixin createUserCard(contactsData = [])
         a(href="", class="flex contact-card")
             img(src=data.avatar, alt="", class="avatar")
             .contact-data
-                p(class="text-bold mb-0")= data.name
-                p(class="text-mute small-text mb-0")= data.status
+                p(class="text-bold")= data.name
+                p(class="text-mute small-text")= data.status
 
 +createUserCard(contacts)
