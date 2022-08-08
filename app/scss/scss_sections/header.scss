@@ -16,9 +16,9 @@
 .h-cont-right{
     &-a:not(:last-child) {
         margin-right: 25px;
-    }    
+    } 
 }
-
+ 
 .img-logo{
     fill: #fff;
     width: 15px;   
@@ -47,11 +47,10 @@
     .img-chat{
         margin-right: 0px;
     }
-    
-    .h-cont-right{
-        &-a:not(:last-child) {
-            margin-right: 40px;
-        }    
-    }
-}
+
+    .h-cont-right:not(:last-child) {
+        margin-right: 40px;
+    }    
+}    
+
 

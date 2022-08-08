@@ -7,7 +7,9 @@ $warning: #FFC107;
 $danger: #DC3545;
 $light: #fff;
 $dark: #343A40;
-$enable-shadows: true;
+$container-max-widths: (
+  xxxl: 1600px
+);
 
 @font-face {
   font-family: Roboto-Regular;

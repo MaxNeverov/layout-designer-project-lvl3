@@ -87,13 +87,13 @@ p{
   color: $secondary;
 }
 
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1540px;
-  }
+.container-xxxl {
+  max-width: 1540px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 960px) {
   .p-tlr{
     padding: 0rem;
   }
