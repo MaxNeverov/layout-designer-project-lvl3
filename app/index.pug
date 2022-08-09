@@ -17,23 +17,24 @@ html(lang="ru")
                             .relative(class="h-100")
                                 .absolute(class="overflow-scroll hide-scrollbar w-100 h-100")
                                     h2 Контакты
-                                    form(class="main-form")
+                                    form
                                         input(type="text", placeholder="Поиск по контактам", class="search")
                                     include pug/contacts.pug
                         .aside-cont(class="h-100 tab-pane fade", id="chats", role="tabpanel", aria-labelledby="chats-tab")
                             .relative(class="h-100")
                                 .absolute(class="overflow-scroll hide-scrollbar w-100 h-100")
                                     h2 Чаты
-                                    form(class="main-form")
-                                        input(type="text", placeholder="Поиск по сообщениям", class="search search-mb")
+                                    form
+                                        input(type="text", placeholder="Поиск по сообщениям", class="search search-chats")
                                     include pug/chats.pug
                         .aside-cont(class="h-100 tab-pane fade", id="profile", role="tabpanel", aria-labelledby="profile-tab")
                             .relative(class="h-100")
                                 .absolute(class="overflow-scroll hide-scrollbar w-100 h-100")
                                     h2 Профиль
-                                    form(class="main-form")
-                                        input(type="text", placeholder="Поиск по сообщениям", class="search")
-                                    include pug/profile.pug
+                                    form
+                                        input(type="text", placeholder="Поиск по сообщениям", class="search search-profile")
+                                    include pug/profile-card.pug
+                                    include pug/profile-list.pug
                 .col(class="none p-0 flex")
                     .flex(class="right-chat")
                         img(src="images/avatar_1.jpg", alt="", class="avatar chat-img")

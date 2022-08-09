@@ -1,0 +1,41 @@
+
+-
+  var lists = {
+    "1":[{
+      main: "Страна",
+      secondary: "Москва, Россия",
+      svg: "images/sprite.svg#web",
+    }],
+
+    "2":[{
+      main: "Телефон",
+      secondary: "+7 (499) 123-45-67",
+      svg: "images/sprite.svg#tele",
+    }],
+
+    "3":[{
+      main: "Email",
+      secondary: "nikita.m@hexlet.io",
+      svg: "images/sprite.svg#mail",
+    }],
+
+    "4":[{
+      main: "Twitter",
+      secondary: "@n__mikhaylov",
+      svg: "images/sprite.svg#people",
+    }]
+
+  }
+
+mixin createList(listsData = [])
+  each list, positions in listsData
+    each data in list
+        .list-group
+            .list-group-item(class="d-flex w-100 justify-content-between p-1r main-list")
+                .list-text
+                    p(class="small-text text-mute")= data.main
+                    p(class="small-text")= data.secondary
+                svg(class="svg-list")
+                    use(xlink:href= data.svg)
+
++createList(lists)

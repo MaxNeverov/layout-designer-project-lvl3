@@ -53,6 +53,10 @@ p {
   padding: 1.5rem;
 }
 
+.p-1r {
+  padding: 1rem;
+}
+
 .flex {
   display: flex;
 }
@@ -63,6 +67,14 @@ p {
 
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-1r {
+  margin-bottom: 1rem;
+}
+
+.mb-87 {
+  margin-bottom: 87px;
 }
 
 .small-text {
@@ -196,6 +208,7 @@ p {
   width: 100%;
   border: none;
   border-bottom: 1px solid #EFEFEF;
+  outline: 0;
 }
 
 .aside-cont h2 {
@@ -240,7 +253,7 @@ p {
   justify-content: space-between;
 }
 
-.search-mb {
+.search-chats {
   margin-bottom: 3rem;
 }
 
@@ -248,5 +261,36 @@ p {
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.profile-img {
+  height: 90px;
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: none;
+}
+
+.search-profile {
+  margin-bottom: 73px;
+}
+
+.svg-list {
+  fill: #6C757D;
+  width: 17px;
+  height: 17px;
+}
+
+.main-list {
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 /*# sourceMappingURL=style.min.css.map */

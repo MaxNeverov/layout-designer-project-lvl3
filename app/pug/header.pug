@@ -7,9 +7,8 @@ header(class="header flex")
     ul(class="nav h-cont-right", id="pills-tab", role="tablist")
       li(class="nav-item h-cont-right-a", role="presentation")
         a(class="active", id="pills-contacts-tab", data-toggle="pill", href="#contacts", role="tab", aria-controls="pills-contacts", aria-selected="true")
-          <svg class="img-chat">
-            <use xlink:href="images/sprite.svg#people">
-          </svg>
+          svg(class="img-chat")
+            use(xlink:href="images/sprite.svg#people")
           span(class="h-menu none") Контакты
       li(class="nav-item h-cont-right-a", role="presentation")
         a(id="pills-chat-tab", data-toggle="pill", href="#chats", role="tab", aria-controls="pills-chats", aria-selected="false")

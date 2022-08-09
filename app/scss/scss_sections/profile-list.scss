@@ -1,0 +1,16 @@
+.svg-list{
+    fill: $secondary;
+    width: 17px;   
+    height: 17px;
+}
+
+.main-list{
+    align-items: center;
+    border: none;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
