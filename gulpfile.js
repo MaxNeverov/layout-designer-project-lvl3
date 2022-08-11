@@ -92,7 +92,7 @@ function scripts() {
   .pipe(babel({
     presets: ['@babel/env']
   }))
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(concat('main.min.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(size({

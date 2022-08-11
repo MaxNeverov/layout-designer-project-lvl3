@@ -4,21 +4,24 @@
       name: "Вениамин Редакторович",
       message: "о_О",
       avatar: "/images/avatar_4.jpg",
-      time: "11:45"
+      time: "11:45",
+      reference: "./chat.html"
     }],
 
     "2":[{
       name: "Джедай Падаванов",
       message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
       avatar: "/images/avatar_2.jpg",
-      time: "10:12"
+      time: "10:12",
+      reference: "#"
     }],
 
     "3":[{
       name: "Алексей Примадонин",
       message: "Тесты упали >_<",
       avatar: "/images/avatar_3.jpg",
-      time: "08:53"
+      time: "08:53",
+      reference: "#"
     }],
 
   }
@@ -27,8 +30,8 @@ mixin createChatCard(chatsData = [])
   each chat, positions in chatsData
     each data in chat
       .contact
-        a(href="", class="flex contact-card")
-            img(src=data.avatar, alt="", class="avatar")
+        a(href=data.reference, class="flex contact-card")
+            img(src=data.avatar, alt="", class="avatar mr-15r")
             .contact-data(class="w-100 overflow-hidden")
                 .name-time(class="flex")
                     p(class="text-bold")= data.name

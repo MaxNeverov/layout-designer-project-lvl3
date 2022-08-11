@@ -38,6 +38,9 @@ p{
 .p-tlr{
   padding: 1.5rem;
 }
+.pt-3r{
+  padding-top: 3rem;
+}
 .p-1r{
   padding: 1rem;
 }
@@ -55,6 +58,15 @@ p{
 }
 .mb-1r{
   margin-bottom: 1rem;
+}
+.mr-1r{
+  margin-right: 1rem;
+}
+.mt-1r{
+  margin-top: 1rem;
+}
+.mr-15r{
+  margin-right: 1.5rem;
 }
 .mb-87{
   margin-bottom: 87px;
@@ -80,7 +92,7 @@ p{
 
 .left-aside{
   max-width: 464px;
-  border-right: 2px solid $gray;
+  border-right: 1px solid $gray;
   flex-direction: column;
 }
 
@@ -88,7 +100,7 @@ p{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 24px;
+  
 }
 
 .text-mute{

@@ -1,0 +1,62 @@
+
+-
+  var messages = {
+    "1":[{
+      name: "Вениамин Редакторович",
+      message: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+      avatar: "images/avatar_4.jpg",
+      time: "8 минут назад",
+      messageOut: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+      avatarOut: "images/avatar_1.jpg",
+      timeOut: "5 минут назад",
+    }],
+
+    "3":[{
+      name: "Вениамин Редакторович",
+      message: "Лады",
+      avatar: "images/avatar_4.jpg",
+      time: "5 минут назад",
+      messageOut: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+      avatarOut: "images/avatar_1.jpg",
+      timeOut: "3 минуты назад",
+    }]
+
+  }
+
+mixin createMessage(messagesData = [])
+    each message, positions in messagesData
+        each data in message
+            .input-message(class="mb-3 flex align-items-end")
+                img(src= data.avatar, alt="", class="avatar mr-1r")
+                .input-message-right-part(class="flex")
+                    p(class="text-bold message-autor")= data.name
+                    p(class="text-mute message-comment")= data.message
+                    p(class="text-mute small-text message-time")= data.time
+            .output-message(class="mb-3 flex align-items-end justify-content-end")
+                img(src=data.avatarOut, alt="", class="avatar mr-1r")
+                .output-message-right-part(class="flex")
+                    p(class="message-comment")= data.messageOut
+                    p(class="small-text message-time")= data.time
+
+.right-chat(class="h-100  flex ")
+    .current-chat-header(class="flex p-tlr")
+        img(src="/images/avatar_4.jpg", alt="", class="avatar mr-15r")
+        .contact-data
+            p(class="text-bold") Вениамин Редакторович
+            p(class="text-mute small-text") Онлайн
+    .relative(class="current-chat-body m-lr-3 h-100")
+        .absolute(class="overflow-scroll hide-scrollbar w-100 h-100")
+            .message-cont(class="pb-5 pt-3r")
+                +createMessage(messages)
+                .input-message(class="flex align-items-end")
+                    img(src= "images/avatar_4.jpg", alt="", class="avatar mr-1r")
+                    .input-message-right-part(class="flex")
+                        p(class="text-bold message-autor") Вениамин Редакторович
+                        p(class="text-mute message-comment") о_О
+                        p(class="text-mute small-text message-time") Только что
+    .current-chat-footer(class="m-lr-3")
+        form(action="", class="current-chat-form flex")
+            input(type="textarea", placeholder="Напишите сообщение...", class="w-100 current-chat-input")
+            button(class="form-button")
+                svg(class="svg-button")
+                    use(xlink:href="images/sprite.svg#cursor")

@@ -37,8 +37,12 @@
     font-size: 14px;
 }
 
+.current-chat-none{
+    display:none;
+}
 
-@media (max-width: 1000px){
+
+@media (max-width: 960px){
     .header{
         border-top-left-radius: 0; 
         padding-right: 40px; 
@@ -48,9 +52,15 @@
         margin-right: 0px;
     }
 
-    .h-cont-right:not(:last-child) {
-        margin-right: 40px;
-    }    
+    .h-cont-right{
+        &-a:not(:last-child) {
+            margin-right: 40px;
+        } 
+    }
+
+    .current-chat-none{
+        display:block;
+    }
 }    
 
 
