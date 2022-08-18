@@ -323,6 +323,10 @@ p {
 .current-chat-header {
   box-shadow: none;
   border-bottom: 1px solid #EFEFEF;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .m-lr-3 {
@@ -332,7 +336,7 @@ p {
 
 .form-button {
   background-color: #4545A5;
-  height: 50px;
+  height: 46px;
   width: 54px;
   border-radius: 50%;
   border: none;
@@ -397,8 +401,8 @@ p {
 }
 
 .mini-chat-form {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-right: 16px;
   padding-left: 16px;
 }

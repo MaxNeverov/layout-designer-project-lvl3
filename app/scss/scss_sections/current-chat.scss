@@ -5,6 +5,10 @@
 .current-chat-header{
     box-shadow: none;
     border-bottom: 1px solid $gray;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
 }
 
 .m-lr-3{
@@ -14,7 +18,7 @@
 
 .form-button{
     background-color: $primary;
-    height: 50px;
+    height: 46px;
     width: 54px;
     border-radius: 50%;
     border: none;
